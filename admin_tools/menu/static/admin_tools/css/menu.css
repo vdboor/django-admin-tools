@@ -2,6 +2,9 @@
 
 #header {
     overflow: visible;
+    height: auto;       /* let content decide, no default 40px height */
+    min-height: 40px;
+    padding-bottom: 0;  /* menu is at the bottom, no 10px bottom margin */
 }
 
 #header #branding h1 {
@@ -27,8 +30,10 @@
 }
 
 #header #navigation-menu {
+    clear: both;
     height: 35px;
     z-index: 9999;
+    margin-top: 5px;  /* restore some of the space that was removed in the #header */
     background: transparent url(../images/admin-tools.png) repeat-x 0 -205px;
 }
 
@@ -52,6 +57,8 @@
 
 #header ul#navigation-menu li {
     float: left;
+    line-height: 17px;
+    font-size: 12px;
 }
 
 #header ul#navigation-menu li a {

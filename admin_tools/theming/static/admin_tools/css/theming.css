@@ -4,8 +4,6 @@
  */
 
 #header {
-    background: url(../images/admin-tools.png) 0 0 repeat-x;
-
     /* Reset the indents of django-flat-theme
       (need to restore 40px on branding+user-tools instead) */
     padding-left: 0;
@@ -22,8 +20,7 @@
 }
 
 #header #user-tools {
-    /* Old Django: 1.2em, flat theme: 40px; */
-    padding-right: 1.2em;
+    padding-right: 40px;
 }
 
 #bookmark-form {
@@ -31,13 +28,21 @@
 }
 
 div.breadcrumbs {
+    clear: both;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 40px;
     border: 0;
-    background-position: 0 -8px;
+    background-color: #fff;
     border-bottom: 1px solid #ededed;
+    color: #333;
+    font-size: 12px;
 }
 
 div.breadcrumbs a {
     display: inline;
+    color: #333;
+}
+
+div.breadcrumbs a:hover {
+    color: #000;
 }
